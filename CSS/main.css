@@ -1,0 +1,355 @@
+                /* ¡TIPOGRAFÍAS! */      
+/* @font-face {   
+    font-family: "DancingScript-Regular.otf";
+    src: url("../CSS/tipografias/DancingScript-Regular.otf");
+    }
+@font-face {
+    font-family: "adelia.ttf";
+    src: url("../CSS/tipografias/adelia.ttf");
+}
+@font-face {
+    font-family: "florilane-cardillac.ttf";
+    src: url("../CSS/tipografias/florilane-cardillac.ttf");
+}
+@font-face {
+    font-family: "Cherolina.ttf";
+    src: url("../CSS/tipografias/Cherolina.ttf");
+}
+@font-face {
+    font-family: "LearningCurve.ttf";
+    src: url("../CSS/tipografias/LearningCurve.ttf");
+} */
+@font-face {
+    font-family: "KingsmanDemo.ttf";
+    src: url("../CSS/tipografias/KingsmanDemo.ttf");
+}
+/* @font-face {
+    font-family: "GothamRoundedLight.otf";
+    src: url("../CSS/tipografias/GothamRoundedLight.otf");
+} */
+
+
+                /* Características Generales (títulos,párrafos,span) */
+
+.encabezados-primarios {
+text-align: center;
+font-family: "KingsmanDemo.ttf";
+font-size: 4rem;
+color: black;
+}
+
+.encabezados-secundarios {
+color: black;
+text-align: center;
+font-family: "KingsmanDemo.ttf";
+font-size: 4rem;
+}
+
+.subtitulos {
+text-align: center;
+font-family: "KingsmanDemo.ttf";
+font-size: 4rem;
+color: white;
+}
+
+span {
+font-family: "KingsmanDemo.ttf";
+color: white;
+font-weight: 900;
+font-size: 2,5 rem;
+}
+
+                /* Body id */
+#body {
+    background-color: #eebc5c;
+    margin: 0;
+}
+                /* HEADERS */
+.headers {
+    display: flex;
+    background-color: #f1ae80;
+    justify-content: space-around;
+}
+
+                /* NAV */
+nav {
+    background-color: #f1ae80;
+    display: flex;
+}
+
+nav ul {
+    display: inline-block;
+}
+
+.logo {
+    width: 132px; 
+    height: 120px; 
+}
+
+.links-nav {
+    display: flex;
+    margin: 8px;
+    padding: 20px;
+    background-color: #f0589852;
+    font-family: "KingsmanDemo.ttf";
+    font-size: 20px;
+    border-radius: 10px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+                    /* INDEX */
+
+
+.imagen-principal {
+    display: flex;
+    background-image: url("..images/principal-sineditnibordes.png");
+    background-attachment: fixed;
+}
+
+.img-principal {
+    max-width: 100vw;
+}
+
+.section-index-1 {
+    margin-bottom: -53px;
+}
+
+
+.section-index-2 {
+    background-color: #f19288;
+}
+
+.section-index-3 {
+    background-color: #eebc5c;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.parrafo-index {
+    text-align: center;
+    font-size: 25px;
+    height: 250px;
+    }
+
+                        /* Biografía */             
+
+
+.parrafo-bio {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    padding: 2px;
+    }
+
+.imgs-bio {
+    display: flex;
+    flex-flow: column;
+}
+
+.img-bio-1 {
+    /* max-width: 100vh; */
+    max-height: 80vh;
+}
+
+.img-bio-2 {
+    /* max-width: 100vh; */
+    max-height: 80vh;
+}
+
+
+                /* CONTACTO */
+
+                .section-contacto {
+                    display:grid;
+                    background-color: #eb6364;
+                    grid-template-columns: 3fr 2fr;
+                }
+                
+                .thead-div {
+                    display: grid;
+                    justify-content: center;
+                }
+                
+                .tbody-div {
+                    display: grid;
+                    justify-content: center;
+                }
+    
+                .tabla-contacto {
+                    display: grid;
+                }
+                
+                .tr-div {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+.form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.form-div {
+    display: grid;
+    justify-content: center;
+}
+.titulos-contacto {
+    text-align: center;
+}
+
+                /* PRODUCTOS */
+
+.section-productos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+
+                    /* NOVEDADES */
+
+.section-novedades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #eebc5c;
+    padding: 10px;
+}
+
+               /* FOOTER */ 
+
+.footer {
+display: flex;
+background-color: white;
+padding: 10px;
+justify-content: center;
+}
+
+.footer-div {
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+
+.p-footer {
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* ------------ Media Queries ------------ */
+
+@media screen and (min-width: 768px) {
+
+            /* Header - Nav - Generales */
+.headers {
+    background-color: #f1ae80;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    }
+
+nav ul {
+        display: inline-flex;
+    }
+
+            /* --- INDEX ---  */
+.parrafo-index {
+        text-align: center;
+        font-size: 40px;
+        height: 250px;
+        }
+    
+
+.section-index-3 {
+        background-color: #eebc5c;
+        text-align: center;
+        font-size: 35px;
+        padding: 20px;
+    }
+    
+            /* ----SOBRE MÍ ---- */
+.parrafo-bio {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    }
+
+    .imgs-bio {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        padding-bottom: 40px;
+    }
+
+    .img-bio-1 {
+        max-width: 100vh;
+        max-height: 80vh;
+    }
+
+    .img-bio-2 {
+        max-width: 100vh;
+        max-height: 80vh;
+    }
+    
+
+            /* ----- PRODUCTOS ------ */
+
+.section-productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.imgs-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+            /* -------- CONTACTO  ------- */
+
+            .section-contacto {
+                display:grid;
+                background-color: #eb6364;
+            }
+            
+            .thead-div {
+                display: grid;
+                justify-content: flex-end;
+            }
+            
+            .tbody-div {
+                display: grid;
+                justify-content: flex-end;
+            }
+
+            .tabla-contacto {
+                display: grid;
+            }
+            
+            .tr-div {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            /* ----FOOTER - GENERAL ---- */
+.footer-div {
+        display:flex;
+        flex-direction: row;
+        }
+}
+
