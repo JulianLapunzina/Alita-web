@@ -1,33 +1,9 @@
                 /* ¡TIPOGRAFÍAS! */      
-/* @font-face {   
-    font-family: "DancingScript-Regular.otf";
-    src: url("../CSS/tipografias/DancingScript-Regular.otf");
-    }
-@font-face {
-    font-family: "adelia.ttf";
-    src: url("../CSS/tipografias/adelia.ttf");
-}
-@font-face {
-    font-family: "florilane-cardillac.ttf";
-    src: url("../CSS/tipografias/florilane-cardillac.ttf");
-}
-@font-face {
-    font-family: "Cherolina.ttf";
-    src: url("../CSS/tipografias/Cherolina.ttf");
-}
-@font-face {
-    font-family: "LearningCurve.ttf";
-    src: url("../CSS/tipografias/LearningCurve.ttf");
-} */
+
 @font-face {
     font-family: "KingsmanDemo.ttf";
     src: url("../CSS/tipografias/KingsmanDemo.ttf");
 }
-/* @font-face {
-    font-family: "GothamRoundedLight.otf";
-    src: url("../CSS/tipografias/GothamRoundedLight.otf");
-} */
-
 
                 /* Características Generales (títulos,párrafos,span) */
 
@@ -36,6 +12,7 @@ text-align: center;
 font-family: "KingsmanDemo.ttf";
 font-size: 4rem;
 color: black;
+padding: 10px;
 }
 
 .encabezados-secundarios {
@@ -43,6 +20,7 @@ color: black;
 text-align: center;
 font-family: "KingsmanDemo.ttf";
 font-size: 4rem;
+padding: 10px;
 }
 
 .subtitulos {
@@ -52,7 +30,7 @@ font-size: 4rem;
 color: white;
 }
 
-span {
+.span-textos {
 font-family: "KingsmanDemo.ttf";
 color: white;
 font-weight: 900;
@@ -65,78 +43,54 @@ font-size: 2,5 rem;
     margin: 0;
 }
                 /* HEADERS */
-.headers {
-    display: flex;
-    background-color: #f1ae80;
-    justify-content: space-around;
+.header {
+    background: linear-gradient(135deg, rgba(241,174,128,0.9976365546218487) 47%, rgba(226,104,126,1) 92%) !important;
 }
 
                 /* NAV */
-nav {
-    background-color: #f1ae80;
-    display: flex;
-}
-
-nav ul {
-    display: inline-block;
-}
 
 .logo {
     width: 132px; 
     height: 120px; 
 }
 
-.links-nav {
-    display: flex;
-    margin: 8px;
-    padding: 20px;
-    background-color: #f0589852;
+.nav-item {
     font-family: "KingsmanDemo.ttf";
-    font-size: 20px;
+    font-size: 25px;
     border-radius: 10px;
-    height: 20px;
-    cursor: pointer;
+    margin: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f95f5f99;
+    cursor: pointer !important;
 }
 
-
-ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
 
                     /* INDEX */
 
-
-.imagen-principal {
-    display: flex;
-    background-image: url("..images/principal-sineditnibordes.png");
-    background-attachment: fixed;
-}
-
 .img-principal {
-    max-width: 98.7vw;
-}
-
-.section-index-1 {
-    margin-bottom: -53px;
+    max-width: 100vw;
 }
 
 
 .section-index-2 {
     background-color: #f19288;
+    padding:20px;
 }
 
 .section-index-3 {
     background-color: #eebc5c;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     padding: 20px;
+    font-family: ui-serif;
 }
 
 .parrafo-index {
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
     height: 250px;
+    font-family: ui-serif;
     }
 
                         /* Biografía */             
@@ -170,7 +124,6 @@ ul li a {
                 .section-contacto {
                     display:grid;
                     background-color: #eb6364;
-                    grid-template-columns: 3fr 2fr;
                 }
                 
                 .thead-div {
@@ -215,6 +168,14 @@ ul li a {
     padding-left: 50px;
 }
 
+.imgs-productos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    gap: 20px;
+}
+
+
 .hover-img-productos:hover {
     transform: scale(1.3);
     transition-property: all;
@@ -231,7 +192,7 @@ ul li a {
     flex-wrap: wrap;
     align-items: center;
     background-color: #eebc5c;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
                /* FOOTER */ 
@@ -259,33 +220,27 @@ align-items: center;
 
 @media screen and (min-width: 768px) {
 
-            /* Header - Nav - Generales */
-.headers {
-    background-color: #f1ae80;
-    justify-content: space-around;
-    position: sticky;
-    top: 0;
-    }
-
-nav ul {
-        display: inline-flex;
-    }
-
             /* --- INDEX ---  */
+
+
+.img-principal {
+    max-width: 100vw;
+}
+
 .parrafo-index {
-        text-align: center;
-        font-size: 40px;
-        height: 250px;
-        }
-    
+    text-align: center;
+    font-size: 40px;
+    height: 250px;
+}
+
 
 .section-index-3 {
-        background-color: #eebc5c;
-        text-align: center;
-        font-size: 35px;
-        padding: 20px;
-    }
-    
+    background-color: #eebc5c;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
             /* ----SOBRE MÍ ---- */
 .parrafo-bio {
     text-align: center;
@@ -293,23 +248,23 @@ nav ul {
     color: black;
     }
 
-    .imgs-bio {
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-        padding-bottom: 40px;
-    }
+.imgs-bio {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
 
-    .img-bio-1 {
-        max-width: 100vh;
-        max-height: 80vh;
-    }
+.img-bio-1 {
+    max-width: 100vh;
+    max-height: 80vh;
+}
 
-    .img-bio-2 {
-        max-width: 100vh;
-        max-height: 80vh;
-    }
-    
+.img-bio-2 {
+    max-width: 100vh;
+    max-height: 80vh;
+}
+
 
             /* ----- PRODUCTOS ------ */
 
@@ -325,6 +280,7 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
+    gap: 20px ;
 }
 
 
@@ -335,17 +291,17 @@ nav ul {
     transition-timing-function: ease;
 }
 
-    /* transition-property: all;
-    transition-duration: .3s;
-    transition-timing-function: ease;
-}
-.imgs-productos img:hover {
-    transform: scale(1);
-}
+                    /* NOVEDADES */
 
-.imgs-productos:hover {
-    transform: scale(1);
-} */
+.section-novedades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #eebc5c;
+    /* padding: 10px; */
+}
 
             /* -------- CONTACTO  ------- */
 
@@ -354,6 +310,14 @@ nav ul {
                 background-color: #eb6364;
             }
             
+            .section-contacto-mapa {
+                padding: 20px;
+            }
+            
+            .section-contacto-radio {
+                background-color: #f19288;
+            }
+
             .thead-div {
                 display: grid;
                 justify-content: flex-end;
@@ -375,8 +339,7 @@ nav ul {
 
             /* ----FOOTER - GENERAL ---- */
 .footer-div {
-        display:flex;
-        flex-direction: row;
-        }
+    display:flex;
+    flex-direction: row;
 }
-
+}
