@@ -1,0 +1,25 @@
+{
+  "name": "alita-web",
+  "version": "1.0.0",
+  "description": "Web de venta  de Amigurumis y Macramé.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build.css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch.css": "nodemon -e scss -x \"npm run build.css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulianLapunzina/Alita-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulianLapunzina/Alita-web/issues"
+  },
+  "homepage": "https://github.com/JulianLapunzina/Alita-web#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
