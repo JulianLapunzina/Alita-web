@@ -1,0 +1,19 @@
+                        /* ------ Biografía ------- */             
+
+.parrafo-bio {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    padding: 2px;
+        .imgs-bio {
+            display: flex;
+            flex-flow: column;
+            gap: 20px;
+                .img-bio-1 {
+                max-height: 80vh;
+                    .img-bio-2 {
+                    max-height: 80vh;
+                    }
+                }
+        }
+}

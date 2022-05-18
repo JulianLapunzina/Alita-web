@@ -1,0 +1,31 @@
+            /* Características Generales (títulos,párrafos,span) */
+
+            .encabezados-primarios {
+                text-align: $encabezados-align;
+                font-family: "KingsmanDemo.ttf";
+                font-size: $encabezados-size;
+                color: $encabezados-color;
+                padding: $encabezados-padding;
+            }
+            
+            .encabezados-secundarios {
+                color: $encabezados-color;
+                text-align: $encabezados-align;
+                font-family: "KingsmanDemo.ttf";
+                font-size: $encabezados-size;
+                padding: $encabezados-padding;
+            }
+            
+            .subtitulos {
+                text-align: $encabezados-align;
+                font-family: "KingsmanDemo.ttf";
+                font-size: $encabezados-size;
+                color: white;
+            }
+            
+            .span-textos {
+                font-family: "KingsmanDemo.ttf";
+                color: white;
+                font-weight: 900;
+                font-size: 2,5 rem;
+            }
