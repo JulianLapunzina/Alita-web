@@ -1,0 +1,23 @@
+            /* ------ FOOTER ------ */ 
+
+            .footer {
+                display: flex;
+                background-color: white;
+                padding: $spacing;
+                justify-content: center;
+                height: 155px;
+                    .footer-div {
+                        display:flex;
+                        flex-direction: column;
+                        align-items: center;
+                        }
+                        .footer-iconos a img{
+                            width: $spacing*5;
+                            height: $spacing*5;
+                            }
+                            .p-footer {
+                                text-align: $alignments;
+                                padding: $spacing*2;
+                                font-size: $spacing+2;
+                                }
+            }
