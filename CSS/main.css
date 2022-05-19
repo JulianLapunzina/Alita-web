@@ -3,7 +3,46 @@
 @font-face {
   font-family: "KingsmanDemo.ttf";
   src: url("../CSS/tipografias/KingsmanDemo.ttf"); }
+/* BUCLE POR SI FUERA NECESARIO */
 
+/* padding1 {
+  padding: 9px; }
+
+padding2 {
+  padding: 8px; }
+
+padding3 {
+  padding: 7px; }
+
+padding4 {
+  padding: 6px; }
+
+padding5 {
+  padding: 5px; }
+
+padding6 {
+  padding: 4px; }
+
+padding7 {
+  padding: 3px; }
+
+padding8 {
+  padding: 2px; }
+
+padding9 {
+  padding: 1px; }
+
+padding10 {
+  padding: 0px; } */
+
+
+
+  
+/* CONDICIONAL - CODERBECA - PLZ KARI NO ME BOCHES */
+div {
+  color: green; }
+
+  
 /* Características Generales (títulos,párrafos,span) */
 .encabezados-primarios {
   text-align: center;

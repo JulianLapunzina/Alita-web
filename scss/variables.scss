@@ -4,3 +4,25 @@ $encabezados-size: 4rem;
 $encabezados-color: black;
 $alignments: center;
 $spacing: 10px;
+
+// Bucles
+
+@for $spacing from 1 through 10 {
+
+    padding#{$spacing} {
+        padding: 10px - $spacing;
+    }
+}
+
+// Condicionales 
+$coder-beca: Juli;
+
+div {
+    @if $coder-beca == Juli {
+        color: green
+    }
+    @else if $coder-beca != Juli {
+        color: red;
+    }
+
+}
