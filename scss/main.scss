@@ -10,7 +10,7 @@
 @import "index";
 @import "productos";
 @import "sobre-mi";
-@import "contacto;";
+@import "contacto";
 @import "footer";
 
 
@@ -35,9 +35,9 @@
     font-family: "KingsmanDemo.ttf";
     font-size: 20px;
     border-radius: 10px;
-    margin: 2px;
-    padding: 4px;
-    text-align: $encabezados-align;
+    margin: $spacing - 8;
+    padding: $spacing - 6;
+    text-align: $alignments;
     background-color: #f95f5f99;
     cursor: pointer !important;
 }
@@ -54,7 +54,7 @@ max-width: 100vw;
 }
 
 .parrafo-index {
-text-align: $encabezados-align;
+text-align: $alignments;
 font-size: 40px;
 height: 250px;
 }
@@ -62,14 +62,14 @@ height: 250px;
 
 .section-index-3 {
 background-color: #eebc5c;
-text-align: $encabezados-align;
+text-align: $alignments;
 font-size: 30px;
-padding: 20px;
+padding: $spacing*2;
 }
 
     /* ----SOBRE MÍ ---- */
 .parrafo-bio {
-text-align: $encabezados-align;
+text-align: $alignments;
 font-size: 35px;
 color: black;
 }
@@ -78,7 +78,7 @@ color: black;
 display: flex;
 flex-flow: row;
 justify-content: space-around;
-padding-bottom: 40px;
+padding-bottom: $spacing*4;
 }
 
 .img-bio-1 {
@@ -99,7 +99,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-around;
 flex-wrap: nowrap;
-padding: 10px;
+padding: $spacing;
 }
 
 .imgs-productos {
@@ -136,7 +136,7 @@ background-color: #eb6364;
 }
 
 .section-contacto-mapa {
-padding: 20px;
+padding: $spacing*2;
 }
 
 .section-contacto-radio {
@@ -163,7 +163,7 @@ display: grid;
             align-items: center;
             }
                 .footer-iconos {
-                    padding: 20px;
+                    padding: $spacing*2;
                 }
                     .footer-iconos a img {
                         width: 100px;
@@ -183,7 +183,7 @@ max-width: 100vw;
 }
 
 .parrafo-index {
-text-align: $encabezados-align;
+text-align: $alignments;
 font-size: 35px;
 height: 250px;
 }
@@ -191,14 +191,14 @@ height: 250px;
 
 .section-index-3 {
 background-color: #eebc5c;
-text-align: $encabezados-align;
+text-align: $alignments;
 font-size: 25px;
-padding: 20px;
+padding: $spacing*2;
 }
 
     /* ----SOBRE MÍ ---- */
 .parrafo-bio {
-text-align: $encabezados-align;
+text-align: $alignments;
 font-size: 35px;
 color: black;
 }
@@ -207,7 +207,7 @@ color: black;
 display: flex;
 flex-flow: row;
 justify-content: space-around;
-padding-bottom: 40px;
+padding-bottom: $spacing*4;
 }
 
 .img-bio-1 {
@@ -228,7 +228,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-around;
 flex-wrap: nowrap;
-padding: 10px;
+padding: $spacing;
 }
 
 .imgs-productos {
@@ -265,7 +265,7 @@ background-color: #eb6364;
 }
 
 .section-contacto-mapa {
-padding: 20px;
+padding: $spacing*2;
 }
 
 .section-contacto-radio {

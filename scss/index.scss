@@ -2,7 +2,7 @@
 
             .section-index-2 {
                 background-color: #f19288;
-                padding:20px;
+                padding: $spacing*2;
             
                 div {
                     display: flex;
@@ -37,12 +37,12 @@
             
             .section-index-3 {
                 background-color: #eebc5c;
-                text-align: center;
+                text-align: $alignments;
                 font-size: 20px;
-                padding: 20px;
+                padding: $spacing*2;
                 font-family: ui-serif;
                     p {
-                        text-align: center;
+                        text-align: $alignments;
                         font-size: 22px;
                         font-family: ui-serif;
                 }

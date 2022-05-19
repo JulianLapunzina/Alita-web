@@ -8,7 +8,7 @@
 .form {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: $spacing*2;
     background-color: white;
         .form-div {
             display: grid;
@@ -17,5 +17,5 @@
     }
 
 .titulos-contacto {
-    text-align: center;
+    text-align: $alignments;
 }

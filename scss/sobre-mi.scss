@@ -1,10 +1,10 @@
                         /* ------ Biografía ------- */             
 
 .parrafo-bio {
-    text-align: center;
+    text-align: $alignments;
     font-size: 20px;
     color: black;
-    padding: 2px;
+    padding: $spacing - 8;
         .imgs-bio {
             display: flex;
             flex-flow: column;
