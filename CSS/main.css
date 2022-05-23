@@ -3,9 +3,8 @@
 @font-face {
   font-family: "KingsmanDemo.ttf";
   src: url("../CSS/tipografias/KingsmanDemo.ttf"); }
-/* BUCLE POR SI FUERA NECESARIO */
 
-/* padding1 {
+padding1 {
   padding: 9px; }
 
 padding2 {
@@ -33,16 +32,8 @@ padding9 {
   padding: 1px; }
 
 padding10 {
-  padding: 0px; } */
+  padding: 0px; }
 
-
-
-  
-/* CONDICIONAL - CODERBECA - PLZ KARI NO ME BOCHES */
-div {
-  color: green; }
-
-  
 /* Características Generales (títulos,párrafos,span) */
 .encabezados-primarios {
   text-align: center;

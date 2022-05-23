@@ -14,15 +14,14 @@ $spacing: 10px;
     }
 }
 
-// Condicionales 
-$coder-beca: Juli;
+// // Condicionales (lo comento porque me cambia las letras de los divs) |
+// $coder-beca: Juli;
 
-div {
-    @if $coder-beca == Juli {
-        color: green
-    }
-    @else if $coder-beca != Juli {
-        color: red;
-    }
-
-}
+// div {
+//     @if $coder-beca == Juli {
+//         color: green
+//     }
+//     @else if $coder-beca != Juli {
+//         color: red;
+//     }
+// }
