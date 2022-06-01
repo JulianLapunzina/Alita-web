@@ -1,8 +1,10 @@
             /* ----- INDEX ------- */
 
             .section-index-2 {
-                background-color: #f19288;
-                padding: $spacing*2;
+                background-color: #fdb87e;
+                padding: $spacing*2+5;
+                text-align: $alignments;
+                font-size: 25px;
             
                 div {
                     display: flex;
@@ -11,11 +13,11 @@
                     
                 }
                     img {
-                        height: 200px;
-                        width: 200px;
+                        height: 150px;
+                        width: 150px;
                         
                         animation-name: jirafita;
-                        animation-duration: 1.5s;
+                        animation-duration: 0.8s;
                         animation-timing-function: ease-in-out;
                         position: absolute; 
             
@@ -35,16 +37,11 @@
             }
             
             
-            .section-index-3 {
+            .section-index-3 p {
                 background-color: #eebc5c;
                 text-align: $alignments;
-                font-size: 20px;
+                font-size: 18px;
                 padding: $spacing*2;
                 font-family: ui-serif;
-                    p {
-                        text-align: $alignments;
-                        font-size: 22px;
-                        font-family: ui-serif;
-                }
                 
             }

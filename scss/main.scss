@@ -48,9 +48,32 @@
 
     /* --- INDEX ---  */
 
+.section-index-1 {
+    div img {
+        height: 70vh !important;
+    }  
+} 
 
-.img-principal {
-max-width: 100vw;
+.section-index-2 { 
+
+    padding: $spacing*2+7;
+
+    img {
+        height: 170px;
+        width: 170px;
+    }
+
+    @keyframes jirafita {
+        0% {
+            transform: translateX(200px);
+            opacity: 0;
+        }
+    
+        100% {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
 }
 
 .parrafo-index {
@@ -62,9 +85,11 @@ height: 250px;
 
 .section-index-3 {
 background-color: #eebc5c;
-text-align: $alignments;
-font-size: 30px;
 padding: $spacing*2;
+    p {
+        text-align: $alignments;
+        font-size: 30px;
+    }
 }
 
     /* ----SOBRE MÍ ---- */
@@ -82,13 +107,15 @@ padding-bottom: $spacing*4;
 }
 
 .img-bio-1 {
-max-width: 100vh;
-max-height: 80vh;
+max-width: 56vh;
+max-height: 75vh;
+padding: 15px;
 }
 
 .img-bio-2 {
-max-width: 100vh;
-max-height: 80vh;
+max-width:  56vh;
+max-height: 75vh;
+padding: 20px;
 }
 
 
@@ -150,37 +177,37 @@ display: grid;
 
     /* ------  FOOTER ------ */
 
-    .footer {
-        display: flex;
-        background-color: white;
-        padding: 10px;
-        justify-content: center;
-        height: 155px;
-    
-        .footer-div {
-            display:flex;
-            flex-direction: row;
-            align-items: center;
-            }
-                .footer-iconos {
-                    padding: $spacing*2;
-                }
-                    .footer-iconos a img {
-                        width: 100px;
-                        height: 100px;
-                    }
-                        .p-footer {
-                            font-size: 18px;
-                        }
+.footer {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    justify-content: center;
+    height: 155px;
+
+    .footer-div {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
         }
+    .footer-iconos {
+        padding: $spacing*2;
+        }
+    .footer-iconos a img {
+        width: 80px;
+        height: 80px;
+        }
+    }
 }
-@media (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 992px) {
         /* --- INDEX ---  */
 
 
-.img-principal {
-max-width: 100vw;
-}
+.section-index-1 {
+    div img {
+        height: 50vh !important;
+    }  
+
+} 
 
 .parrafo-index {
 text-align: $alignments;
@@ -188,38 +215,42 @@ font-size: 35px;
 height: 250px;
 }
 
+.section-index-2 {
+    p {
+        font-size: 30px;
+    }
+}
 
 .section-index-3 {
 background-color: #eebc5c;
-text-align: $alignments;
-font-size: 25px;
 padding: $spacing*2;
+    p {
+    text-align: $alignments;
+    font-size: 20px;
+    }
 }
 
     /* ----SOBRE MÍ ---- */
 .parrafo-bio {
 text-align: $alignments;
-font-size: 35px;
+font-size: 25px;
 color: black;
 }
 
 .imgs-bio {
 display: flex;
-flex-flow: row;
-justify-content: space-around;
+flex-flow: column;
+align-items: center !important;
 padding-bottom: $spacing*4;
 }
-
-.img-bio-1 {
-max-width: 100vh;
-max-height: 80vh;
+.imgs-bio-1 {
+    max-width: 43vw;
+    max-height: 63vh;
 }
-
-.img-bio-2 {
-max-width: 100vh;
-max-height: 80vh;
+.imgs-bio-2 {
+    max-width: 43vw;
+    max-height: 63vh;
 }
-
 
     /* ----- PRODUCTOS ------ */
 
@@ -286,15 +317,74 @@ flex-direction: row;
 }
 
 .footer-iconos a img{
-width: 75px;
-height: 75px;
+width: 60px !important;
+height: 60px !important;
 }
 
 .p-footer {
-font-size: 15px;
+    text-align: $alignments;
+    padding: $spacing+2 !important;
+    font-size: 20px;
 }
 
-    /* ----- FINAL MEDIA QUERIES ------ */
+
+}
+
+@media (min-width: 992px) and (max-width: 1800px) {
+
+    /* ----PRODUCTOS----- */
+
+    .section-productos {
+        padding: 20px;
+    }
+
+    /* ----FOOTER----- */
+    
+    .footer {
+        display: flex;
+        background-color: white;
+        padding: $spacing*2;
+        justify-content: center;
+        height: 210px;
+            .footer-div {
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                }
+                .footer-iconos a img{
+                    width: 90px;
+                    height: 90px;
+                    }
+                    .p-footer {
+                        text-align: $alignments;
+                        padding: $spacing - 5;
+                        font-size: 20px;
+                        }
+    }
+
+    
+    /* -----Biografía----- */
+    .parrafo-bio {
+        font-size: 25px;
+    }
+
+    .imgs-bio {
+        display: flex;
+        flex-flow: row;
+        gap: 20px;
+    }
+
+    .img-bio-1 {
+        height: 63vh;
+        width: 46vw;
+        padding: 15px;
+    }
+    
+    .img-bio-2 {
+        height: 63vh;
+        width: 46vw;
+        padding: 15px;
+    }
 }
 
 

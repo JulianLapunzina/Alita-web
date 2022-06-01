@@ -2,18 +2,28 @@
 
 .parrafo-bio {
     text-align: $alignments;
-    font-size: 20px;
+    font-size: 18px;
     color: black;
-    padding: $spacing - 8;
-        .imgs-bio {
-            display: flex;
-            flex-flow: column;
-            gap: 20px;
-                .img-bio-1 {
-                max-height: 80vh;
-                    .img-bio-2 {
-                    max-height: 80vh;
-                    }
-                }
-        }
+    padding: $spacing+5;
+}
+
+.imgs-bio {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+.section-2-bio {
+    background-color: #fdb87e;
+}
+
+.section-1-bio {
+    background-color: #fdb87e;
+}
+
+.img-bio-1 {
+    padding: 15px;
+}
+
+.img-bio-2 {
+    padding: 15px;
 }
