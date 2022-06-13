@@ -9,8 +9,8 @@
 
 .imgs-bio {
     display: flex;
-    flex-flow: column;
-    gap: 20px;
+    flex-flow: row;
+
 }
 .section-2-bio {
     background-color: #fdb87e;
@@ -21,9 +21,15 @@
 }
 
 .img-bio-1 {
+    width: 60vw;
+    height: 80vh;
     padding: 15px;
+    object-fit: contain;
 }
 
 .img-bio-2 {
     padding: 15px;
+    object-fit: contain;
+    width: 60vw;
+    height: 80vh;
 }
