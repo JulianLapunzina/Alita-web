@@ -1,31 +1,61 @@
-            /* Características Generales (títulos,párrafos,span) */
+            /* Características Generales (títulos,párrafos,span, body, nav, header) */
 
-            .encabezados-primarios {
-                text-align: $alignments;
-                font-family: "KingsmanDemo.ttf";
-                font-size: $encabezados-size;
-                color: $encabezados-color;
-                padding: $spacing;
-            }
-            
-            .encabezados-secundarios {
-                color: $encabezados-color;
-                text-align: $alignments;
-                font-family: "KingsmanDemo.ttf";
-                font-size: $encabezados-size;
-                padding: $spacing;
-            }
-            
-            .subtitulos {
-                text-align: $alignments;
-                font-family: "KingsmanDemo.ttf";
-                font-size: $encabezados-size;
-                color: white;
-            }
-            
-            .span-textos {
-                font-family: "KingsmanDemo.ttf";
-                color: white;
-                font-weight: 900;
-                font-size: 2,5 rem;
-            }
+                        /* ------ Body id ------ */
+#body {
+    background-color: #eebc5c;
+    margin: 0;
+}
+            /* ------ HEADERS ------ */
+.header {
+    background: linear-gradient(135deg, rgba(241,174,128,0.9976365546218487) 47%, rgba(226,104,126,1) 92%);
+}
+
+            /* ------ NAV  ------*/
+
+.logo {
+    width: 100px; 
+    height: 100px; 
+}
+
+.nav-item {
+    font-family: "KingsmanDemo.ttf";
+    font-size: 20px;
+    border-radius: 10px;
+    margin: $spacing - 8;
+    padding: $spacing - 6;
+    text-align: $alignments;
+    background-color: #f95f5f99;
+    cursor: pointer;
+}
+
+                        /* ----Estilos de texto-----*/
+
+.encabezados-primarios {
+    text-align: $alignments;
+    font-family: "KingsmanDemo.ttf";
+    font-size: $encabezados-size;
+    color: $encabezados-color;
+    padding: $spacing;
+}
+
+.encabezados-secundarios {
+    color: $encabezados-color;
+    text-align: $alignments;
+    font-family: "KingsmanDemo.ttf";
+    font-size: $encabezados-size;
+    padding: $spacing;
+}
+
+.subtitulos {
+    text-align: $alignments;
+    font-family: "KingsmanDemo.ttf";
+    font-size: $encabezados-size;
+    color: black;
+}
+
+.span-textos {
+    font-family: "KingsmanDemo.ttf";
+    color: white;
+    font-weight: 900;
+    font-size: 2,5 rem;
+}

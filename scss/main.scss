@@ -13,433 +13,198 @@
 @import "contacto";
 @import "footer";
 
-
-            /* ------ Body id ------ */
-#body {
-    background-color: #eebc5c;
-    margin: 0;
-}
-            /* ------ HEADERS ------ */
-.header {
-    background: linear-gradient(135deg, rgba(241,174,128,0.9976365546218487) 47%, rgba(226,104,126,1) 92%) !important;
-}
-
-            /* ------ NAV  ------*/
-
-.logo {
-    width: 100px; 
-    height: 100px; 
-}
-
-.nav-item {
-    font-family: "KingsmanDemo.ttf";
-    font-size: 20px;
-    border-radius: 10px;
-    margin: $spacing - 8;
-    padding: $spacing - 6;
-    text-align: $alignments;
-    background-color: #f95f5f99;
-    cursor: pointer !important;
-}
-
     /* ------------ Media Queries ------------ */
 
-@media screen and (min-width: 768px) and (max-width: 990px) {
 
-    /* --- INDEX ---  */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+                    /* --- INDEX ---  */
 
-.section-index-1 {
-    div img {
-        height: 70vh !important;
-    }  
-} 
-
-.section-index-2 { 
-
-    padding: $spacing*2+7; 
-
-    img {
-        height: 170px;
-        width: 170px;
-    }
-
-    @keyframes jirafita {
-        0% {
-            transform: translateX(200px);
-            opacity: 0;
-        }
-    
-        100% {
-            transform: translateX(0px);
-            opacity: 1;
-        }
-    }
-}
-
-.parrafo-index {
-text-align: $alignments;
-font-size: 40px;
-height: 250px;
-}
-
-
-.section-index-3 {
-background-color: #eebc5c;
-padding: $spacing*2;
+.section-index-2 {
     p {
-        text-align: $alignments;
         font-size: 30px;
     }
 }
 
-    /* ----SOBRE MÍ ---- */
+.section-index-3 {
+    padding: $spacing*2;
+    p {
+    font-size: 25px;
+    }
+}
+
+                    /* ----SOBRE MÍ ---- */
 .parrafo-bio {
-text-align: $alignments;
-font-size: 35px;
-color: black;
+font-size: 20px;
 }
 
 .imgs-bio {
-display: flex;
-flex-flow: row;
-justify-content: space-around;
-padding-bottom: $spacing*4;
+    display: flex;
+    flex-flow: row;
+}
+            /* ------ PRODUCTOS ------- */
+
+.section-productos-1 {
+    grid-template-columns: repeat(3, 1fr);
+
+    .gallery__item:nth-child(1) {
+        grid-column-start: span 2;
+        }
+    .gallery__item:nth-child(4) {
+        grid-row-start: span 1;
+        }    
+    .gallery__item:nth-child(6) {
+        grid-row-start: span 1;
+        }
+    gallery__item:nth-child(7) {
+        grid-row-start: span 1; 
+        }
 }
 
+.section-productos-2 {
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+
+                        /* --- INDEX ---  */
+
+
+.parrafo-index {
+font-size: 40px;
+height: 250px;
+}
+
+.section-index-3 {
+    p {
+        font-size: 30px;
+    }
+}
+
+                    /* ----SOBRE MÍ ---- */
+
+.parrafo-bio {
+    font-size: 30px;
+}
+
+.imgs-bio {
+    display: flex;
+    flex-direction: row;
+}
 .img-bio-1 {
-max-width: 56vh;
-max-height: 75vh;
-padding: 15px;
+    width: 50%;
+    height: 50%;
 }
 
 .img-bio-2 {
-max-width:  65vw;
-max-height: 76vh;
-padding: 20px;
+    width: 50%;
+    height: 50%;
 }
-
 
     /* ----- PRODUCTOS ------ */
 
 .section-productos-1 {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
 .gallery_item:nth-child(3) {
     grid-column-start: span 3;
-}
+    }
 
 .gallery_item:nth-child(5) {
     grid-column-start: span 1;
-}
+    }
 .gallery_item:nth-child(3) {
     grid-column-start: span 2;
-}
+    }
 }          
 
 .section-productos-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 100px;
-    padding: 10px;
-    grid-gap: 5px;
+    grid-auto-rows: 400px;
 }
-
-    /* ------ NOVEDADES ------ */
-
-.section-novedades {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-flex-wrap: wrap;
-align-items: center;
-background-color: #eebc5c;
-}
-
-    /* -------- CONTACTO  ------- */
-
-.section-contacto {
-display:grid;
-background-color: #eb6364;
-}
-
-.section-contacto-mapa {
-padding: $spacing*2;
-}
-
-.section-contacto-radio {
-background-color: #f19288;
-}
-
-
-.tabla-contacto {
-display: grid;
-}
-
-    /* ------  FOOTER ------ */
-
-.footer {
-    display: flex;
-    background-color: white;
-    padding: 10px;
-    justify-content: center;
-    height: 155px;
-
-    .footer-div {
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        }
-    .footer-iconos {
-        padding: $spacing*2;
-        }
-    .footer-iconos a img {
-        width: 80px;
-        height: 80px;
-        }
-    }
-}
-@media screen and (min-width: 576px) and (max-width: 992px) {
-        /* --- INDEX ---  */
-
-.parrafo-index {
-text-align: $alignments;
-font-size: 35px;
-height: 250px;
-}
-
-.section-index-2 {
-    p {
-        font-size: 30px;
-    }
-}
-
-.section-index-3 {
-background-color: #eebc5c;
-padding: $spacing*2;
-    p {
-    text-align: $alignments;
-    font-size: 20px;
-    }
-}
-
-    /* ----SOBRE MÍ ---- */
-.parrafo-bio {
-text-align: $alignments;
-font-size: 25px;
-color: black;
-}
-
-.imgs-bio {
-display: flex;
-flex-flow: row;
-align-items: center !important;
-padding-bottom: $spacing*4;
-}
-// .imgs-bio-1 {
-//     max-width: 43vw;
-//     max-height: 63vh;
-// }
-
-.img-bio-1 {
-    width: 50vw;
-    height: 80vh;
-    padding: 15px;
-    object-fit: contain;
-}
-
-// .imgs-bio-2 {
-//     max-width: 43vw;
-//     max-height: 63vh;
-// }
-.img-bio-2 {
-    padding: 15px;
-    object-fit: contain;
-    width: 50vw;
-    height: auto;
-}
-
-
-            /* ------ PRODUCTOS ------- */
-
-.section-index-2 {
-    padding: $spacing*4;
-    font-size: 30px;
-}
-
-.parrafo-index {
-    font-size: 500px;
-}
-.section-productos-1 {
-    grid-template-columns: repeat(3, 1fr);
-
-            .gallery__item:nth-child(1) {
-                grid-column-start: span 2;
-            }
-            .gallery__item:nth-child(4) {
-                grid-row-start: span 1;
-            }    
-            .gallery__item:nth-child(6) {
-                grid-row-start: span 1;
-            }
-            .gallery__item:nth-child(7) {
-                grid-row-start: span 1; 
-            }
-}
-    /* ------- NOVEDADES ------- */
-
-.section-novedades {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-flex-wrap: wrap;
-align-items: center;
-background-color: #eebc5c;
-}
-
-    /* -------- CONTACTO  ------- */
-
-.section-contacto {
-display:grid;
-background-color: #eb6364;
-}
-
-.section-contacto-mapa {
-padding: $spacing*2;
-}
-
-.section-contacto-radio {
-background-color: #f19288;
-}
-
-
-.tabla-contacto {
-display: grid;
-}
-
-
-/* ----FOOTER - GENERAL ---- */
-
-.footer-div {
-display:flex;
-flex-direction: row;
-}
-
-.footer-iconos a img{
-width: 60px !important;
-height: 60px !important;
-}
-
-.p-footer {
-    text-align: $alignments;
-    padding: $spacing+2 !important;
-    font-size: 20px;
-}
-
 
 }
 
 @media (min-width: 992px) and (max-width: 6000px) {
 
-.header {
-    height: 131px;
-}
-    
-.logo {
-    height: 124px;
-}
-
+                        // <------ INDEX ------->
 .img-index {
-        height: 70vh !important;
+        height: 80vh !important;
     }
 
-
 .section-index-3 {
-    padding: 10px;
+    padding: 100px;
     p {
         font-size: 35px;
-        padding: 0px!important;
     }
 }
 
 .section-index-2 {
     padding: 60px;
-    font-size: 35px;
+    font-size: 34px;
 }
-
-.section-index-1 {
-    height: 70vh;
-}
-
-
-
 
             /* ------ PRODUCTOS ------- */
 
 
-            .section-productos-1 {
-                grid-template-columns: repeat(4, 1fr);
-            
-                        .gallery__item:nth-child(1) {
-                            grid-column-start: span 2;
-                        }
-                        .gallery__item:nth-child(4) {
-                            grid-row-start: span 2;
-                            grid-column-start: span 2;
-
-                        }    
-                        .gallery__item:nth-child(6) {
-                            grid-row-start: span 1;
-                        }
-                        .gallery__item:nth-child(7) {
-                            grid-row-start: span 1; 
-                        }
-
+.section-productos-1 {
+    grid-template-columns: repeat(4, 1fr);
+        .gallery__item:nth-child(1) {
+            grid-column-start: span 2;
             }
+        .gallery__item:nth-child(4) {
+            grid-row-start: span 2;
+            grid-column-start: span 2;
+            }    
+        .gallery__item:nth-child(6) {
+            grid-row-start: span 1;
+            }
+        .gallery__item:nth-child(7) {
+            grid-row-start: span 1; 
+            }
+}
 
-    /* ----FOOTER----- */
-    
-    .footer {
-        padding: $spacing*2;
-        justify-content: center;
-        height: 180px;
-            .footer-div {
-                display:flex;
-                flex-direction: column;
-                align-items: center;
-                }
-                .footer-iconos a img{
-                    width: 90px;
-                    height: 90px;
-                    }
-                    .p-footer {
-                        text-align: $alignments;
-                        padding: $spacing - 5;
-                        font-size: 20px;
-                        }
-    }
+.section-productos-2 {
+    grid-template-columns: repeat(3, 1fr);
+}
 
-    
-    /* -----Biografía----- */
-    .parrafo-bio {
-        font-size: 35px;
-    }
-
+                /* -----Biografía----- */
     .imgs-bio {
         display: flex;
-        flex-flow: row;
-        gap: 20px;
+        flex-direction: row;
     }
-
     .img-bio-1 {
-        height: 63vh;
-        width: 46vw;
-        padding: 15px;
+        width: 50%;
+        height: 50%;
     }
     
     .img-bio-2 {
-        height: 63vh;
-        width: 46vw;
-        padding: 15px;
+        width: 50%;
+        height: 50%;
+    }
+
+    .parrafo-bio {
+        font-size: 30px;
+        padding: $spacing*3+5;
+        font-weight: 400;
+    }
+
+                /* ----FOOTER----- */
+    
+.footer {
+    padding: $spacing*2;
+    height: 180px;
+        .footer-iconos a img{
+            width: 90px;
+            height: 90px;
+            }
+        .p-footer {
+            font-size: 20px;
+        }
     }
 }
 

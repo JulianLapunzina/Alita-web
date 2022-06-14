@@ -5,43 +5,10 @@
                 padding: $spacing*2+5;
                 text-align: $alignments;
                 font-size: 25px;
-            
-                div {
-                    display: flex;
-                    justify-content: end;
-                    align-items: flex-end;
-                    
-                }
-                    img {
-                        height: 150px;
-                        width: 150px;
-                        
-                        animation-name: jirafita;
-                        animation-duration: 0.8s;
-                        animation-timing-function: ease-in-out;
-                        position: absolute; 
-            
-                    }
             }
-            
-            @keyframes jirafita {
-                0% {
-                    transform: translateX(200px);
-                    opacity: 0;
-                }
-            
-                100% {
-                    transform: translateX(0px);
-                    opacity: 1;
-                }
-            }
-            
-            
             .section-index-3 p {
-                background-color: #eebc5c;
                 text-align: $alignments;
                 font-size: 18px;
                 padding: $spacing*2;
                 font-family: ui-serif;
-                
             }
